@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECO3311 · Field Guide — Money and Banking</title>
+  <meta name="description" content="A concise field guide to the core concepts of ECO3311 (Money and Banking): interest rates, the Federal Reserve, monetary policy, quantity theory, and the AD framework." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="layout">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar" aria-label="Chapter navigation">
+    <div class="brand">
+      <div class="brand-mark">§</div>
+      <div>
+        <div class="brand-title">Field Guide</div>
+        <div class="brand-meta">ECO3311 · Spring 2026</div>
+      </div>
+    </div>
+
+    <nav class="chapter-nav" id="chapterNav">
+      <a href="#overview" data-nav="overview">Overview</a>
+
+      <div class="nav-group">Interest Rates</div>
+      <a href="#ch5" data-nav="ch5"><span class="ch-num">05</span> Behavior of Interest Rates</a>
+      <a href="#ch6" data-nav="ch6"><span class="ch-num">06</span> Risk &amp; Term Structure</a>
+
+      <div class="nav-group">The Federal Reserve</div>
+      <a href="#ch13" data-nav="ch13"><span class="ch-num">13</span> Central Banks &amp; the Fed</a>
+      <a href="#ch14" data-nav="ch14"><span class="ch-num">14</span> Money Supply Process</a>
+      <a href="#ch15" data-nav="ch15"><span class="ch-num">15</span> Tools of Monetary Policy</a>
+      <a href="#ch16" data-nav="ch16"><span class="ch-num">16</span> Conduct of Policy</a>
+
+      <div class="nav-group">Money &amp; the Macro</div>
+      <a href="#ch19" data-nav="ch19"><span class="ch-num">19</span> Quantity Theory of Money</a>
+      <a href="#ch21" data-nav="ch21"><span class="ch-num">21</span> MP &amp; AD Curves</a>
+
+      <div class="nav-group">Reference</div>
+      <a href="#cheatsheet" data-nav="cheatsheet">Cheat Sheet</a>
+    </nav>
+
+    <button class="search-trigger" id="searchBtn" aria-label="Open search">
+      <span>Search concepts</span>
+      <kbd>⌘K</kbd>
+    </button>
+
+    <div class="sidebar-foot">
+      Compiled from lecture notes and Mishkin, <em>The Economics of Money, Banking, and Financial Markets</em>. For personal study reference.
+    </div>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="overview">
+      <div class="hero-tag">A Field Guide · 2026</div>
+      <h1 class="hero-title">Money<br/>&amp; Banking</h1>
+      <p class="hero-lede">
+        The essentials of how <em>interest rates</em> form, how the <em>Federal Reserve</em> works, and how <em>monetary policy</em> shapes the wider economy — distilled from a semester of ECO3311 into a reference you can scan in an afternoon.
+      </p>
+      <div class="hero-meta">
+        <div><span class="k">Course</span><span class="v">ECO3311</span></div>
+        <div><span class="k">Semester</span><span class="v">Spring 2026</span></div>
+        <div><span class="k">Chapters</span><span class="v">Eight</span></div>
+        <div><span class="k">Text</span><span class="v">Mishkin</span></div>
+      </div>
+    </section>
+
+    <!-- ============ CH 5 ============ -->
+    <section class="chapter" id="ch5">
+      <header class="chapter-head">
+        <div class="chapter-num">05</div>
+        <div class="chapter-title-block">
+          <div class="chapter-eyebrow">Chapter Five</div>
+          <h2 class="chapter-title">The Behavior of Interest Rates</h2>
+          <p class="chapter-tldr">
+            Interest rates emerge from the bond market — or equivalently, the money market. Anything that shifts the supply or demand for bonds (or money) changes the rate. This chapter is a machine for predicting those shifts.
+          </p>
+        </div>
+      </header>
+
+      <div class="chapter-body">
+
+        <div class="concept">
+          <div class="concept-label">Concept · 5.1</div>
+          <h3 class="concept-title">The Theory of Portfolio Choice</h3>
+          <div class="concept-body">
+            <p>Four factors determine the demand for any asset. Learn them once; use them everywhere.</p>
+            <dl class="defs">
+              <dt>Wealth</dt><dd>Higher wealth → more demand for all assets, including bonds.</dd>
+              <dt>Expected return</dt><dd>Relative to alternatives. If bonds beat stocks on expected return → bond demand ↑.</dd>
+              <dt>Risk</dt><dd>Relative to alternatives. Bond risk ↑ → demand ↓ (risk aversion).</dd>
+              <dt>Liquidity</dt><dd>Relative to alternatives. Easier to sell → demand ↑.</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="concept">
+          <div class="concept-label">Concept · 5.2</div>
+          <h3 class="concept-title">Shifters of the Bond Market</h3>
+          <div class="concept-body">
+            <p>Any of these shifts the demand curve for bonds. Supply is driven by a different, shorter list.</p>
+            <table class="data-table">
+              <thead><tr><th>Factor</th><th>Demand</th><th>Supply</th></tr></thead>
+              <tbody>
+                <tr><th>Wealth <span class="arrow-up"></span></th><td>Right</td><td>—</td></tr>
+                <tr><th>Expected return on bonds <span class="arrow-up"></span></th><td>Right</td><td>—</td></tr>
+                <tr><th>Bond risk <span class="arrow-up"></span></th><td>Left</td><td>—</td></tr>
+                <tr><th>Bond liquidity <span class="arrow-up"></span></th><td>Right</td><td>—</td></tr>
+                <tr><th>Expected inflation <span class="arrow-up"></span></th><td>Left</td><td>Right</td></tr>
+                <tr><th>Expected profitability <span class="arrow-up"></span></th><td>—</td><td>Right</td></tr>
+                <tr><th>Government deficit <span class="arrow-up"></span></th><td>—</td><td>Right</td></tr>
+              </tbody>
+            </table>
+            <p><strong>Rule of thumb:</strong> Demand right → price up → rate down. Supply right → price down → rate up.</p>
+          </div>
+        </div>
+
+        <div class="concept">
+          <div class="concept-label">Concept · 5.3</div>
+          <h3 class="concept-title">The Fisher Effect</h3>
+          <div class="concept-body">
+            <p>When expected inflation rises, both sides of the market react. Bond demand falls (lower real return); bond supply rises (cheaper real borrowing). Price drops, rate rises — by approximately the increase in expected inflation.</p>
+            <div class="formula" data-copy="i = r + π^e">
+              <div>
+                <div class="expr">i ≈ r + π<sup>e</sup></div>
+                <div class="caption">Nominal rate = real rate + expected inflation</div>
+              </div>
+              <div class="copy-hint">Click to copy</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="concept">
+          <div class="concept-label">Concept · 5.4</div>
+          <h3 class="concept-title">The Liquidity Preference Framework</h3>
+          <div class="concept-body">
+            <p>An alternative lens: households hold two assets — <strong>money</strong> and <strong>bonds</strong>. Interest rates are determined in the money market.</p>
+            <dl class="defs">
+              <dt>Income effect</dt><dd>Y ↑ → money demand shifts right → i ↑.</dd>
+              <dt>Price-level effect</dt><dd>P ↑ → need more nominal $ for same real transactions → M<sub>d</sub> right → i ↑.</dd>
+              <dt>Money supply</dt><dd>Fed OMO purchase → M<sub>s</sub> right → i ↓.</dd>
+            </dl>
+            <div class="callout">
+              <div class="callout-tag">Intuition</div>
+              <p>The interest rate <em>is</em> the opportunity cost of holding money. Holding cash means giving up bond yield.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz" aria-label="Chapter 5 quiz">
+          <div class="quiz-head">Check yourself</div>
+          <div class="qa">
+            <div class="q">Wealth increases. What happens to interest rates?</div>
+            <button class="reveal">Reveal answer</button>
+            <div class="a">Bond demand shifts <strong>right</strong> → price ↑ → interest rate <strong>falls</strong>.</div>
+          </div>
+          <div class="qa">
+            <div class="q">Expected inflation rises by 2 percentage points. What happens to nominal rates?</div>
+            <button class="reveal">Reveal answer</button>
+            <div class="a">Nominal rates rise by roughly <strong>2 percentage points</strong> (Fisher effect). Both bond supply shifts right and demand shifts left → price falls.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ CH 6 ============ -->
+    <section class="chapter" id="ch6">
+      <header class="chapter-head">
+        <div class="chapter-num">06</div>
+        <div class="chapter-title-block">
+          <div class="chapter-eyebrow">Chapter Six</div>
+          <h2 class="chapter-title">The Risk &amp; Term Structure of Interest Rates</h2>
+          <p class="chapter-tldr">
+            Bonds of the same maturity differ by risk, tax status, and liquidity. Bonds of different maturities form a yield curve whose shape three competing theories try to explain.
+          </p>
+        </div>
+      </header>
+
+      <div class="chapter-body">
+
+        <div class="concept">
+          <div class="concept-label">Concept · 6.1</div>
+          <h3 class="concept-title">Risk Structure</h3>
+          <div class="concept-body">
+            <p>Even at the same maturity, bonds price differently. Three characteristics drive the spread.</p>
+            <dl class="defs">
+              <dt>Default risk</dt><dd>Chance the issuer fails to pay. Higher risk → higher yield (risk premium).</dd>
+              <dt>Liquidity</dt><dd>Less liquid bonds carry a yield premium to compensate for harder resale.</dd>
+              <dt>Tax status</dt><dd>Tax-exempt bonds (municipals) offer lower pre-tax yield — same after-tax return.</dd>
+            </dl>
+            <div class="formula" data-copy="Risk premium = yield_corp - yield_treasury (same maturity)">
+              <div>
+                <div class="expr">risk premium = y<sub>corp</sub> − y<sub>Treasury</sub></div>
+                <div class="caption">Same maturity. Compensation for default risk.</div>
+              </div>
+              <div class="copy-hint">Click to copy</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="concept">
+          <div class="concept-label">Concept · 6.2</div>
+          <h3 class="concept-title">Three Facts the Yield Curve Must Explain</h3>
+          <div class="concept-body">
+            <p>Any credible theory of the term structure has to account for all three of these empirical observations.</p>
+            <table class="data-table">
+              <thead><tr><th>#</th><th>Observation</th></tr></thead>
+              <tbody>
+                <tr><th>1</th><td>Rates on different maturities <strong>move together</strong> over time.</td></tr>
+                <tr><th>2</th><td>When short rates are <strong>low</strong>, curves tend to slope <strong>up</strong>. When high, curves tend to <strong>invert</strong>.</td></tr>
+                <tr><th>3</th><td>Yield curves <strong>typically</strong> slope upward.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="concept">
+          <div class="concept-label">Concept · 6.3</div>
+          <h3 class="concept-title">Three Theories, Compared</h3>
+          <div class="concept-body">
+            <table class="data-table">
+              <thead><tr><th>Theory</th><th>Assumption</th><th>Explains</th></tr></thead>
+              <tbody>
+                <tr><th>Expectations</th><td>Bonds of all maturities are perfect substitutes. Long rate = avg of expected short rates.</td><td>Facts 1 &amp; 2</td></tr>
+                <tr><th>Segmented Markets</th><td>Bonds of different maturities are <strong>not</strong> substitutes at all.</td><td>Fact 3</td></tr>
+                <tr><th>Liquidity Premium</th><td>Partial substitutes; investors prefer short. Long rate = avg expected short rates + term premium.</td><td>All three</td></tr>
+              </tbody>
+            </table>
+            <div class="formula" data-copy="i_nt = (i_t + i_{t+1}^e + ... + i_{t+n-1}^e) / n + l_nt">
+              <div>
+                <div class="expr">i<sub>nt</sub> = (i<sub>t</sub> + i<sup>e</sup><sub>t+1</sub> + ⋯ + i<sup>e</sup><sub>t+n−1</sub>) / n + l<sub>nt</sub></div>
+                <div class="caption">Liquidity premium theory — n-year rate</div>
+              </div>
+              <div class="copy-hint">Click to copy</div>
+            </div>
+            <div class="callout">
+              <div class="callout-tag">Signal</div>
+              <p>A downward-sloping (inverted) yield curve typically signals markets expect <em>short rates to fall</em> — often ahead of a recession.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz" aria-label="Chapter 6 quiz">
+          <div class="quiz-head">Check yourself</div>
+          <div class="qa">
+            <div class="q">Which term-structure theory explains all three yield curve facts?</div>
+            <button class="reveal">Reveal answer</button>
+            <div class="a"><strong>Liquidity Premium Theory.</strong> It combines the expectations theory's average-of-short-rates with a preference for short maturities, so it explains fact 3 (typical upward slope) as well as facts 1 and 2.</div>
+          </div>
+          <div class="qa">
+            <div class="q">If expected one-year rates over the next three years are 3%, 4%, and 5%, what is today's three-year rate under pure expectations theory?</div>
+            <button class="reveal">Reveal answer</button>
+            <div class="a"><strong>4%.</strong> The three-year rate = (3 + 4 + 5) ÷ 3 = 4%. (Add a liquidity premium under LPT.)</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ CH 13 ============ -->
+    <section class="chapter" id="ch13">
+      <header class="chapter-head">
+        <div class="chapter-num">13</div>
+        <div class="chapter-title-block">
+          <div class="chapter-eyebrow">Chapter Thirteen</div>
+          <h2 class="chapter-title">Central Banks &amp; the Federal Reserve System</h2>
+          <p class="chapter-tldr">
+            The Federal Reserve is the central bank of the United States — independent within government, structured to insulate monetary policy from short-term political pressure.
+          </p>
+        </div>
+      </header>
+
+      <div class="chapter-body">
+
+        <div class="concept">
+          <div class="concept-label">Concept · 13.1</div>
+          <h3 class="concept-title">Structure</h3>
+          <div class="concept-body">
+            <dl class="defs">
+              <dt>Board of Governors</dt><dd>7 members, 14-year staggered terms, headquartered in Washington D.C.</dd>
+              <dt>12 Reserve Banks</dt><dd>Regional banks. Examine member banks, clear checks, act as lender of last resort.</dd>
+              <dt>FOMC</dt><dd>12 voting members — 7 Governors + NY Fed President + 4 rotating Reserve Bank presidents. Meets ~8× / year.</dd>
+              <dt>Member banks</dt><dd>All nationally chartered banks; state banks may opt in.</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="concept">
+          <div class="concept-label">Concept · 13.2</div>
+          <h3 class="concept-title">The Dual Mandate</h3>
+          <div class="concept-body">
+            <p>Congress gave the Fed two co-equal primary goals — plus a technical third that gets less attention.</p>
+            <dl class="defs">
+              <dt>Maximum employment</dt><dd>Push the unemployment rate toward its natural rate.</dd>
+              <dt>Price stability</dt><dd>Keep inflation low and predictable. Fed targets ~2%.</dd>
+              <dt>Moderate long-term rates</dt><dd>Typically achieved automatically when the first two are met.</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="quiz" aria-label="Chapter 13 quiz">
+          <div class="quiz-head">Check yourself</div>
+          <div class="qa">
+            <div class="q">How many voting members sit on the FOMC?</div>
+            <button class="reveal">Reveal answer</button>
+            <div class="a"><strong>Twelve.</strong> 7 Governors + NY Fed President (permanent) + 4 rotating Reserve Bank presidents.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ CH 14 ============ -->
+    <section class="chapter" id="ch14">
+      <header class="chapter-head">
+        <div class="chapter-num">14</div>
+        <div class="chapter-title-block">
+          <div class="chapter-eyebrow">Chapter Fourteen</div>
+          <h2 class="chapter-title">The Money Supply Process</h2>
+          <p class="chapter-tldr">
+            The Fed controls the monetary base. Banks and depositors decide how that base gets multiplied into the broader money supply. The money multiplier ties them together.
+          </p>
+        </div>
+      </header>
+
+      <div class="chapter-body">
+
+        <div class="concept">
+          <div class="concept-label">Concept · 14.1</div>
+          <h3 class="concept-title">Three Players, One Outcome</h3>
+          <div class="concept-body">
+            <dl class="defs">
+              <dt>The Fed</dt><dd>Controls the <strong>monetary base</strong> via open market operations.</dd>
+              <dt>Banks</dt><dd>Decide how much of their reserves to lend out vs. hold as excess.</dd>
+              <dt>Depositors</dt><dd>Decide how to split holdings between <strong>currency</strong> and <strong>deposits</strong>.</dd>
+            </dl>
+            <div class="formula" data-copy="MB = C + R">
+              <div>
+                <div class="expr">MB = C + R</div>
+                <div class="caption">Monetary base = currency in circulation + total reserves</div>
+              </div>
+              <div class="copy-hint">Click to copy</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="concept">
+          <div class="concept-label">Concept · 14.2</div>
+          <h3 class="concept-title">The Money Multiplier</h3>
+          <div class="concept-body">
+            <p>In a fractional reserve system, one dollar of new base becomes several dollars of money supply. The multiplier ties the two together.</p>
+            <div class="formula" data-copy="m = (1 + c) / (r + e + c)">
+              <div>
+                <div class="expr">m = (1 + c) / (r + e + c)</div>
+                <div class="caption">Where c = C/D, r = required reserve ratio, e = ER/D</div>
+              </div>
+              <div class="copy-hint">Click to copy</div>
+            </div>
+            <div class="formula" data-copy="M = m × MB">
+              <div>
+                <div class="expr">M = m × MB</div>
+                <div class="caption">Money supply = multiplier × monetary base</div>
+              </div>
+              <div class="copy-hint">Click to copy</div>
+            </div>
+            <table class="data-table">
+              <thead><tr><th>Variable rises</th><th>Effect on m</th><th>Why</th></tr></thead>
+              <tbody>
+                <tr><th>c (currency-deposit ratio)</th><td>Falls</td><td>More leakage into non-multiplying currency.</td></tr>
+                <tr><th>r (required reserve ratio)</th><td>Falls</td><td>Banks must hold more, lend less.</td></tr>
+                <tr><th>e (excess reserve ratio)</th><td>Falls</td><td>Banks hoard reserves instead of lending.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="concept">
+          <div class="concept-label">Concept · 14.3</div>
+          <h3 class="concept-title">Crises and the Multiplier</h3>
+          <div class="concept-body">
+            <p>Two moments in history where m collapsed and dragged M with it — even as MB moved in the opposite direction.</p>
+            <dl class="defs">
+              <dt>1929–33</dt><dd>Bank runs pushed <em>c</em> up (people withdrew currency). Fearful banks pushed <em>e</em> up (hoarded reserves). <strong>m collapsed → M fell sharply</strong>, even with MB roughly stable. A monetary policy failure.</dd>
+              <dt>2007–08</dt><dd>Fed expanded MB dramatically. But banks hoarded the injection (<em>e</em> exploded). <strong>m fell just as hard</strong> — M grew only modestly despite a base multiple times larger.</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="quiz" aria-label="Chapter 14 quiz">
+          <div class="quiz-head">Check yourself</div>
+          <div class="qa">
+            <div class="q">Suppose r = 0.10, c = 0.40, and e = 0.05. Compute the money multiplier.</div>
+            <button class="reveal">Reveal answer</button>
+            <div class="a">m = (1 + 0.40) / (0.10 + 0.05 + 0.40) = 1.40 / 0.55 ≈ <strong>2.55</strong>.</div>
+          </div>
+          <div class="qa">
+            <div class="q">Why did the money supply fall in 1929–33 even though the monetary base didn't collapse?</div>
+            <button class="reveal">Reveal answer</button>
+            <div class="a">Both <em>c</em> and <em>e</em> spiked — depositors pulled currency (bank runs) and surviving banks hoarded reserves. The <strong>money multiplier collapsed</strong>, so M = m × MB fell sharply even with MB stable.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ CH 15 ============ -->
+    <section class="chapter" id="ch15">
+      <header class="chapter-head">
+        <div class="chapter-num">15</div>
+        <div class="chapter-title-block">
+          <div class="chapter-eyebrow">Chapter Fifteen</div>
+          <h2 class="chapter-title">Tools of Monetary Policy</h2>
+          <p class="chapter-tldr">
+            The Fed moves the federal funds rate by acting on the market for reserves. Four tools do most of the work — OMO, discount lending, IOR, and reserve requirements.
+          </p>
+        </div>
+      </header>
+
+      <div class="chapter-body">
+
+        <div class="concept">
+          <div class="concept-label">Concept · 15.1</div>
+          <h3 class="concept-title">The Market for Reserves</h3>
+          <div class="concept-body">
+            <p>The FFR sits at the intersection of a downward-sloping demand for reserves and a vertical supply. Two horizontal segments — floor and ceiling — bound the picture.</p>
+
+            <figure class="diagram" aria-label="Market for reserves diagram">
+              <svg viewBox="0 0 620 380" xmlns="http://www.w3.org/2000/svg" role="img">
+                <defs>
+                  <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                    <path d="M0,0 L10,5 L0,10 z" fill="#2f3745" />
+                  </marker>
+                </defs>
+
+                <!-- Axes -->
+                <line x1="70" y1="60" x2="70" y2="330" stroke="#2f3745" stroke-width="1.5" marker-end="url(#arr)" />
+                <line x1="70" y1="330" x2="580" y2="330" stroke="#2f3745" stroke-width="1.5" marker-end="url(#arr)" />
+
+                <!-- Axis labels -->
+                <text x="70" y="45" text-anchor="middle" font-family="Young Serif, serif" font-size="14" fill="#2f3745">Federal funds rate</text>
+                <text x="580" y="355" text-anchor="end" font-family="Young Serif, serif" font-size="14" fill="#2f3745">Reserves</text>
+
+                <!-- Discount ceiling line -->
+                <line x1="70" y1="110" x2="560" y2="110" stroke="#b1442c" stroke-width="1" stroke-dasharray="4 4" />
+                <text x="565" y="114" font-family="JetBrains Mono, monospace" font-size="11" fill="#b1442c">i_dw (discount)</text>
+
+                <!-- IOR floor line -->
+                <line x1="70" y1="260" x2="560" y2="260" stroke="#3d6f5a" stroke-width="1" stroke-dasharray="4 4" />
+                <text x="565" y="264" font-family="JetBrains Mono, monospace" font-size="11" fill="#3d6f5a">i_or (IOR)</text>
+
+                <!-- Demand curve: down-slope, flat at IOR -->
+                <path d="M 100 90 Q 200 170 320 240 L 480 260 L 560 260"
+                      fill="none" stroke="#2f3745" stroke-width="2.5" />
+                <text x="180" y="150" font-family="Young Serif, serif" font-size="16" fill="#2f3745" font-style="italic">D</text>
+
+                <!-- Supply curve: vertical at NBR, then flat at discount -->
+                <path d="M 340 330 L 340 110 L 560 110"
+                      fill="none" stroke="#3d6f5a" stroke-width="2.5" />
+                <text x="350" y="150" font-family="Young Serif, serif" font-size="16" fill="#3d6f5a" font-style="italic">S</text>
+
+                <!-- Equilibrium marker -->
+                <circle cx="340" cy="210" r="5" fill="#b1442c" />
+                <line x1="70" y1="210" x2="340" y2="210" stroke="#b1442c" stroke-width="1" stroke-dasharray="2 3" />
+                <line x1="340" y1="210" x2="340" y2="330" stroke="#b1442c" stroke-width="1" stroke-dasharray="2 3" />
+                <text x="55" y="214" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11" fill="#b1442c">FFR*</text>
+                <text x="340" y="348" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#b1442c">R*</text>
+              </svg>
+              <div class="diagram-caption">
+                <strong>Demand</strong> slopes down (banks demand more reserves at lower opportunity cost) and flattens at the IOR floor — banks won't lend below what the Fed pays. <strong>Supply</strong> is vertical at nonborrowed reserves set by the Fed and flattens at the discount rate — the ceiling above which banks would borrow from the window instead.
+              </div>
+            </figure>
+          </div>
+        </div>
+
+        <div class="concept">
+          <div class="concept-label">Concept · 15.2</div>
+          <h3 class="concept-title">How Each Tool Moves the FFR</h3>
+          <div class="concept-body">
+            <table class="data-table">
+              <thead><tr><th>Tool</th><th>Mechanism</th><th>Effect on FFR</th></tr></thead>
+              <tbody>
+                <tr><th>Open market purchase</th><td>Injects reserves — Supply shifts right</td><td>Falls</td></tr>
+                <tr><th>Open market sale</th><td>Drains reserves — Supply shifts left</td><td>Rises</td></tr>
+                <tr><th>Lower discount rate</th><td>Lowers the supply-curve ceiling</td><td>Falls (if binding)</td></tr>
+                <tr><th>Raise IOR</th><td>Raises the demand-curve floor</td><td>Rises</td></tr>
+                <tr><th>Raise reserve requirement</th><td>Banks need more — Demand shifts right</td><td>Rises</td></tr>
+              </tbody>
+            </table>
+            <div class="callout">
+              <div class="callout-tag">In Practice</div>
+              <p>Today the Fed steers the FFR primarily through <em>IOR</em> and the <em>overnight reverse repo rate</em> (ON RRP) — bracketing the rate from above and below. Open market operations remain the most flexible tool.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="concept">
+          <div class="concept-label">Concept · 15.3</div>
+          <h3 class="concept-title">Why OMO Wins</h3>
+          <div class="concept-body">
+            <p>Among conventional tools, open market operations are preferred because they are:</p>
+            <dl class="defs">
+              <dt>Fully controlled</dt><dd>Fed decides the exact quantity of reserves added or drained.</dd>
+              <dt>Flexible</dt><dd>Any size, from micro-adjustments to major interventions.</dd>
+              <dt>Reversible</dt><dd>A purchase today can be undone by a sale tomorrow.</dd>
+              <dt>Fast</dt><dd>Same-day execution — no lag between decision and effect.</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="quiz" aria-label="Chapter 15 quiz">
+          <div class="quiz-head">Check yourself</div>
+          <div class="qa">
+            <div class="q">The Fed conducts an open market purchase. What happens in the market for reserves?</div>
+            <button class="reveal">Reveal answer</button>
+            <div class="a">The <strong>supply curve shifts right</strong> (more reserves injected) → <strong>FFR falls</strong>.</div>
+          </div>
+          <div class="qa">
+            <div class="q">If the Fed raises IOR above the current FFR, what happens?</div>
+            <button class="reveal">Reveal answer</button>
+            <div class="a">The demand curve's <strong>floor rises</strong>. Banks won't lend below IOR (they can just park at the Fed), so <strong>FFR rises to match</strong>.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ CH 16 ============ -->
+    <section class="chapter" id="ch16">
+      <header class="chapter-head">
+        <div class="chapter-num">16</div>
+        <div class="chapter-title-block">
+          <div class="chapter-eyebrow">Chapter Sixteen</div>
+          <h2 class="chapter-title">The Conduct of Monetary Policy</h2>
+          <p class="chapter-tldr">
+            Monetary policy is a chain of causation: tools act on operating instruments, which move intermediate targets, which achieve final goals. The chain is only as strong as its weakest link.
+          </p>
+        </div>
+      </header>
+
+      <div class="chapter-body">
+
+        <div class="concept">
+          <div class="concept-label">Concept · 16.1</div>
+          <h3 class="concept-title">The Policy Chain</h3>
+          <div class="concept-body">
+            <table class="data-table">
+              <thead><tr><th>Layer</th><th>Examples</th></tr></thead>
+              <tbody>
+                <tr><th>Tools</th><td>OMO, discount lending, IOR, reserve requirements</td></tr>
+                <tr><th>Operating instruments</th><td>Reserve aggregates, federal funds rate</td></tr>
+                <tr><th>Intermediate targets</th><td>Monetary aggregates (M1, M2), long-term rates</td></tr>
+                <tr><th>Goals</th><td>Maximum employment, price stability</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="concept">
+          <div class="concept-label">Concept · 16.2</div>
+          <h3 class="concept-title">Two Targeting Strategies</h3>
+          <div class="concept-body">
+            <dl class="defs">
+              <dt>Nonborrowed reserves targeting</dt><dd>Fed pins the quantity of reserves via OMO. The FFR is allowed to float. Delivers stable money growth, volatile rates. Friedman-favored.</dd>
+              <dt>FFR targeting</dt><dd>Fed pins the rate; reserves adjust to whatever level clears the market. This is the modern Fed's approach — stable rates, floating reserves.</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="quiz" aria-label="Chapter 16 quiz">
+          <div class="quiz-head">Check yourself</div>
+          <div class="qa">
+            <div class="q">Under FFR targeting, what floats?</div>
+            <button class="reveal">Reveal answer</button>
+            <div class="a"><strong>Reserves.</strong> The Fed conducts whatever OMO is needed to keep the FFR at target — the reserve quantity moves to clear the market.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ CH 19 ============ -->
+    <section class="chapter" id="ch19">
+      <header class="chapter-head">
+        <div class="chapter-num">19</div>
+        <div class="chapter-title-block">
+          <div class="chapter-eyebrow">Chapter Nineteen</div>
+          <h2 class="chapter-title">Quantity Theory, Inflation &amp; Money Demand</h2>
+          <p class="chapter-tldr">
+            The classical claim: in the long run, money is neutral. Sustained money growth in excess of output growth becomes inflation. One identity — MV = PY — encodes it.
+          </p>
+        </div>
+      </header>
+
+      <div class="chapter-body">
+
+        <div class="concept">
+          <div class="concept-label">Concept · 19.1</div>
+          <h3 class="concept-title">The Quantity Equation</h3>
+          <div class="concept-body">
+            <p>An identity — always true by construction. Its power comes from what you're willing to assume about velocity.</p>
+            <div class="formula" data-copy="M × V = P × Y">
+              <div>
+                <div class="expr">M × V = P × Y</div>
+                <div class="caption">Level form — money × velocity = price level × real output</div>
+              </div>
+              <div class="copy-hint">Click to copy</div>
+            </div>
+            <div class="formula" data-copy="%ΔM + %ΔV = %ΔP + %ΔY">
+              <div>
+                <div class="expr">%ΔM + %ΔV = %ΔP + %ΔY</div>
+                <div class="caption">Growth form — useful for empirical work</div>
+              </div>
+              <div class="copy-hint">Click to copy</div>
+            </div>
+            <p>Classical assumption: V is stable in the long run. Rearrange: <strong>inflation ≈ money growth − output growth</strong>. Money is a veil.</p>
+          </div>
+        </div>
+
+        <div class="concept">
+          <div class="concept-label">Concept · 19.2</div>
+          <h3 class="concept-title">Two Views of Money Demand</h3>
+          <div class="concept-body">
+            <dl class="defs">
+              <dt>Quantity theory</dt><dd>Md = (1/V) × P × Y. Money demand depends only on nominal income. No role for the interest rate.</dd>
+              <dt>Keynesian — 3 motives</dt><dd><strong>Transactions</strong> (function of income) · <strong>Precautionary</strong> (function of income) · <strong>Speculative</strong> (function of interest rate, inversely).</dd>
+            </dl>
+            <div class="callout">
+              <div class="callout-tag">The Difference That Matters</div>
+              <p>Keynes made money demand a function of <em>interest rates</em> — which is why the liquidity preference framework in Ch. 5 exists at all. In Fisher's quantity theory, that channel is muted.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="concept">
+          <div class="concept-label">Concept · 19.3</div>
+          <h3 class="concept-title">Debt Monetization &amp; Hyperinflation</h3>
+          <div class="concept-body">
+            <p>When a government's deficits are financed by the central bank printing money, the mechanism is direct:</p>
+            <p><strong>Deficit → CB buys new gov't debt with newly created money → MB ↑ → M ↑ → P ↑.</strong></p>
+            <p>Persistent debt monetization is the historical recipe for hyperinflation — Weimar Germany, Zimbabwe, mid-2010s Venezuela. The identity does not permit escape.</p>
+          </div>
+        </div>
+
+        <div class="quiz" aria-label="Chapter 19 quiz">
+          <div class="quiz-head">Check yourself</div>
+          <div class="qa">
+            <div class="q">M grows at 7%, V is constant, Y grows at 2%. Approximate inflation?</div>
+            <button class="reveal">Reveal answer</button>
+            <div class="a">%ΔP ≈ %ΔM + %ΔV − %ΔY = 7 + 0 − 2 = <strong>5%</strong>.</div>
+          </div>
+          <div class="qa">
+            <div class="q">Which of Keynes's three motives depends on the interest rate?</div>
+            <button class="reveal">Reveal answer</button>
+            <div class="a">The <strong>speculative motive.</strong> Higher interest rates raise the opportunity cost of holding money, so speculative money demand falls when yields rise.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ CH 21 ============ -->
+    <section class="chapter" id="ch21">
+      <header class="chapter-head">
+        <div class="chapter-num">21</div>
+        <div class="chapter-title-block">
+          <div class="chapter-eyebrow">Chapter Twenty-one</div>
+          <h2 class="chapter-title">Monetary Policy &amp; the Aggregate Demand Curve</h2>
+          <p class="chapter-tldr">
+            The MP curve captures how the Fed sets the real interest rate in response to inflation. Combined with the IS relation, it produces an aggregate demand curve that shifts with policy.
+          </p>
+        </div>
+      </header>
+
+      <div class="chapter-body">
+
+        <div class="concept">
+          <div class="concept-label">Concept · 21.1</div>
+          <h3 class="concept-title">The MP Curve</h3>
+          <div class="concept-body">
+            <p>The Fed's reaction function — the real interest rate <em>r</em> the Fed will set at each level of inflation <em>π</em>. Upward sloping because the Fed <strong>raises real rates when inflation rises</strong>.</p>
+          </div>
+        </div>
+
+        <div class="concept">
+          <div class="concept-label">Concept · 21.2</div>
+          <h3 class="concept-title">The Taylor Principle</h3>
+          <div class="concept-body">
+            <p>To stabilize inflation, the Fed must raise <strong>nominal</strong> rates by <em>more</em> than one-for-one with inflation. Only then does the <strong>real</strong> rate rise, which is what actually cools demand.</p>
+            <div class="callout">
+              <div class="callout-tag">Why It Matters</div>
+              <p>Violate the Taylor principle and monetary policy is <em>destabilizing</em>: higher inflation → lower real rates → more demand → still higher inflation. The 1970s stagflation is the textbook cautionary tale.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="concept">
+          <div class="concept-label">Concept · 21.3</div>
+          <h3 class="concept-title">Movement vs. Shift</h3>
+          <div class="concept-body">
+            <dl class="defs">
+              <dt>Movement along MP</dt><dd>Automatic response to inflation, given the Fed's rule.</dd>
+              <dt>Shift right/down</dt><dd>Autonomous expansionary policy — lower <em>r</em> for any <em>π</em>.</dd>
+              <dt>Shift left/up</dt><dd>Autonomous contractionary policy — higher <em>r</em> for any <em>π</em>.</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="concept">
+          <div class="concept-label">Concept · 21.4</div>
+          <h3 class="concept-title">The AD Curve</h3>
+          <div class="concept-body">
+            <p>Downward sloping in (π, Y) space. Higher inflation → Fed raises the real rate (per MP) → C and I fall → equilibrium output <strong>Y falls</strong>.</p>
+            <table class="data-table">
+              <thead><tr><th>Shock</th><th>AD shift</th></tr></thead>
+              <tbody>
+                <tr><th>Autonomous expansionary policy</th><td>Right</td></tr>
+                <tr><th>Fiscal expansion (G↑ or T↓)</th><td>Right</td></tr>
+                <tr><th>Positive consumer confidence shock</th><td>Right</td></tr>
+                <tr><th>Financial crisis / credit contraction</th><td>Left</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="quiz" aria-label="Chapter 21 quiz">
+          <div class="quiz-head">Check yourself</div>
+          <div class="qa">
+            <div class="q">Why does the AD curve slope downward?</div>
+            <button class="reveal">Reveal answer</button>
+            <div class="a">Higher π → the Fed raises the <strong>real interest rate</strong> (MP curve) → consumption and investment fall → equilibrium <strong>Y falls</strong>. So π and Y are inversely related.</div>
+          </div>
+          <div class="qa">
+            <div class="q">What does the Taylor principle say about nominal interest rates?</div>
+            <button class="reveal">Reveal answer</button>
+            <div class="a">The Fed must raise nominal rates <strong>more than one-for-one</strong> with inflation, so real rates actually rise — otherwise policy is destabilizing.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ CHEAT SHEET ============ -->
+    <section class="chapter" id="cheatsheet">
+      <header class="chapter-head">
+        <div class="chapter-num">§</div>
+        <div class="chapter-title-block">
+          <div class="chapter-eyebrow">Reference</div>
+          <h2 class="chapter-title">Cheat Sheet</h2>
+          <p class="chapter-tldr">Everything above, compressed to one screen. Formulas, shifters, mechanisms.</p>
+        </div>
+      </header>
+
+      <div class="cheatsheet-grid">
+
+        <div class="cheat-card">
+          <h4>Formulas</h4>
+          <ul>
+            <li><code>i ≈ r + π<sup>e</sup></code> — Fisher</li>
+            <li><code>MB = C + R</code> — Monetary base</li>
+            <li><code>m = (1+c)/(r+e+c)</code> — Multiplier</li>
+            <li><code>M = m × MB</code> — Money supply</li>
+            <li><code>M × V = P × Y</code> — Quantity eq.</li>
+            <li><code>i<sub>nt</sub> = avg(i<sup>e</sup>) + l<sub>nt</sub></code> — Term structure</li>
+          </ul>
+        </div>
+
+        <div class="cheat-card">
+          <h4>Bond demand shifts right</h4>
+          <ul>
+            <li>Wealth ↑</li>
+            <li>Expected return on bonds ↑</li>
+            <li>Bond risk ↓</li>
+            <li>Bond liquidity ↑</li>
+          </ul>
+        </div>
+
+        <div class="cheat-card">
+          <h4>Bond supply shifts right</h4>
+          <ul>
+            <li>Expected profitability ↑</li>
+            <li>Expected inflation ↑</li>
+            <li>Government deficit ↑</li>
+          </ul>
+        </div>
+
+        <div class="cheat-card">
+          <h4>Yield curve — 3 facts</h4>
+          <ul>
+            <li>Rates move together over time</li>
+            <li>Low short → up-slope · High short → invert</li>
+            <li>Curves typically slope up</li>
+          </ul>
+        </div>
+
+        <div class="cheat-card">
+          <h4>Term-structure theories</h4>
+          <ul>
+            <li>Expectations — explains 1 &amp; 2</li>
+            <li>Segmented markets — explains 3</li>
+            <li>Liquidity premium — explains all three</li>
+          </ul>
+        </div>
+
+        <div class="cheat-card">
+          <h4>FFR — tool effects</h4>
+          <ul>
+            <li>OMO buy → S right → FFR ↓</li>
+            <li>Discount ↓ → ceiling ↓ → FFR ↓ if binding</li>
+            <li>IOR ↑ → floor ↑ → FFR ↑</li>
+            <li>RR ↑ → D right → FFR ↑</li>
+          </ul>
+        </div>
+
+        <div class="cheat-card">
+          <h4>Multiplier — direction</h4>
+          <ul>
+            <li>c ↑ → m ↓ (currency leakage)</li>
+            <li>r ↑ → m ↓ (forced reserves)</li>
+            <li>e ↑ → m ↓ (hoarded reserves)</li>
+            <li>1929 &amp; 2008 — <em>c</em> and <em>e</em> collapsed m</li>
+          </ul>
+        </div>
+
+        <div class="cheat-card">
+          <h4>Keynes — money demand motives</h4>
+          <ul>
+            <li>Transactions — fn(Y)</li>
+            <li>Precautionary — fn(Y)</li>
+            <li>Speculative — fn(i), inverse</li>
+          </ul>
+        </div>
+
+        <div class="cheat-card">
+          <h4>MP &amp; AD</h4>
+          <ul>
+            <li>MP slopes up · Taylor principle required</li>
+            <li>Movement along = automatic</li>
+            <li>Shift = autonomous policy</li>
+            <li>AD slopes down via MP + IS</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="foot">
+      <div>
+        <div class="colophon">ECO3311 · Money and Banking · Spring 2026</div>
+        <div>A field guide. Set in Young Serif, Figtree &amp; JetBrains Mono.</div>
+      </div>
+      <div>
+        Source: lecture notes &amp; Mishkin. <a href="#overview">Back to top ↑</a>
+      </div>
+    </footer>
+
+  </main>
+
+</div>
+
+<!-- Search modal -->
+<div class="search-scrim" id="searchScrim" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="search-panel">
+    <input class="search-input" id="searchInput" type="text" placeholder="Search concepts, formulas, chapters…" autocomplete="off" />
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast">Copied</div>
+
+<script src="script.js"></script>
+</body>
+</html>
