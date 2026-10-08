@@ -432,7 +432,7 @@
             <p>The FFR sits at the intersection of a downward-sloping demand for reserves and a vertical supply. Two horizontal segments — floor and ceiling — bound the picture.</p>
 
             <figure class="diagram" aria-label="Market for reserves diagram">
-              <svg viewBox="0 0 620 380" xmlns="http://www.w3.org/2000/svg" role="img">
+              <svg viewBox="0 0 720 380" xmlns="http://www.w3.org/2000/svg" role="img">
                 <defs>
                   <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
                     <path d="M0,0 L10,5 L0,10 z" fill="#2f3745" />
@@ -441,36 +441,36 @@
 
                 <!-- Axes -->
                 <line x1="70" y1="60" x2="70" y2="330" stroke="#2f3745" stroke-width="1.5" marker-end="url(#arr)" />
-                <line x1="70" y1="330" x2="580" y2="330" stroke="#2f3745" stroke-width="1.5" marker-end="url(#arr)" />
+                <line x1="70" y1="330" x2="590" y2="330" stroke="#2f3745" stroke-width="1.5" marker-end="url(#arr)" />
 
                 <!-- Axis labels -->
                 <text x="70" y="45" text-anchor="middle" font-family="Young Serif, serif" font-size="14" fill="#2f3745">Federal funds rate</text>
-                <text x="580" y="355" text-anchor="end" font-family="Young Serif, serif" font-size="14" fill="#2f3745">Reserves</text>
+                <text x="590" y="355" text-anchor="end" font-family="Young Serif, serif" font-size="14" fill="#2f3745">Reserves</text>
 
                 <!-- Discount ceiling line -->
-                <line x1="70" y1="110" x2="560" y2="110" stroke="#b1442c" stroke-width="1" stroke-dasharray="4 4" />
-                <text x="565" y="114" font-family="JetBrains Mono, monospace" font-size="11" fill="#b1442c">i_dw (discount)</text>
+                <line x1="70" y1="110" x2="580" y2="110" stroke="#b1442c" stroke-width="1" stroke-dasharray="4 4" />
+                <text x="595" y="114" font-family="JetBrains Mono, monospace" font-size="12" fill="#b1442c">i_dw (discount)</text>
 
                 <!-- IOR floor line -->
-                <line x1="70" y1="260" x2="560" y2="260" stroke="#3d6f5a" stroke-width="1" stroke-dasharray="4 4" />
-                <text x="565" y="264" font-family="JetBrains Mono, monospace" font-size="11" fill="#3d6f5a">i_or (IOR)</text>
+                <line x1="70" y1="260" x2="580" y2="260" stroke="#3d6f5a" stroke-width="1" stroke-dasharray="4 4" />
+                <text x="595" y="264" font-family="JetBrains Mono, monospace" font-size="12" fill="#3d6f5a">i_or (IOR)</text>
 
                 <!-- Demand curve: down-slope, flat at IOR -->
-                <path d="M 100 90 Q 200 170 320 240 L 480 260 L 560 260"
+                <path d="M 100 90 Q 200 170 320 240 L 490 260 L 580 260"
                       fill="none" stroke="#2f3745" stroke-width="2.5" />
-                <text x="180" y="150" font-family="Young Serif, serif" font-size="16" fill="#2f3745" font-style="italic">D</text>
+                <text x="180" y="150" font-family="Young Serif, serif" font-size="18" fill="#2f3745" font-style="italic">D</text>
 
                 <!-- Supply curve: vertical at NBR, then flat at discount -->
-                <path d="M 340 330 L 340 110 L 560 110"
+                <path d="M 340 330 L 340 110 L 580 110"
                       fill="none" stroke="#3d6f5a" stroke-width="2.5" />
-                <text x="350" y="150" font-family="Young Serif, serif" font-size="16" fill="#3d6f5a" font-style="italic">S</text>
+                <text x="350" y="150" font-family="Young Serif, serif" font-size="18" fill="#3d6f5a" font-style="italic">S</text>
 
                 <!-- Equilibrium marker -->
                 <circle cx="340" cy="210" r="5" fill="#b1442c" />
                 <line x1="70" y1="210" x2="340" y2="210" stroke="#b1442c" stroke-width="1" stroke-dasharray="2 3" />
                 <line x1="340" y1="210" x2="340" y2="330" stroke="#b1442c" stroke-width="1" stroke-dasharray="2 3" />
-                <text x="55" y="214" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11" fill="#b1442c">FFR*</text>
-                <text x="340" y="348" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#b1442c">R*</text>
+                <text x="55" y="214" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="12" fill="#b1442c">FFR*</text>
+                <text x="340" y="348" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#b1442c">R*</text>
               </svg>
               <div class="diagram-caption">
                 <strong>Demand</strong> slopes down (banks demand more reserves at lower opportunity cost) and flattens at the IOR floor — banks won't lend below what the Fed pays. <strong>Supply</strong> is vertical at nonborrowed reserves set by the Fed and flattens at the discount rate — the ceiling above which banks would borrow from the window instead.
